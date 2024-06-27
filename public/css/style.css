@@ -171,7 +171,7 @@ div.burger-menu i{
     }
 
     main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+       /* box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
     }
 
     main section div.products{
@@ -252,3 +252,15 @@ header .form {
     margin: 0 auto; /* Centramos la barra de búsqueda */
 }
 
+article .descripcion{
+    opacity: 0;
+}
+/* Mostrar la descripción al pasar el mouse sobre el artículo */
+article:hover .descripcion {
+    opacity: 1;
+}
+
+/* Añadir sombra al pasar el mouse sobre el artículo */
+article:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
