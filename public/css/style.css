@@ -70,12 +70,16 @@ header .form{
 }
 
 header nav{
+    display: flex;
     font-size: 12px;
     margin-left: 20px;
+    justify-content: space-between;
 }
 
 header ul li{
+    display: inline-block;
     list-style-type: none;
+    margin: 0px 10px;
 }
 
 header ul li a{
@@ -208,16 +212,23 @@ div.burger-menu i{
 	text-align: center;
 	margin-top: 5em;
     border: 1px solid red;
+    justify-content: center;
+    width: 100vw;
 }
 
 #footer #col1,
 #footer #col2,
 #footer #col3{
-	float: left;
+	display: inline-block;
 	width: 320px;
 	padding: 0px 40px 0px 40px;
+   
 }
-	
+ #footer{
+    display: flex;
+    flex-wrap:wrap;    
+    
+ }
 #icon{
 	display: block;
 	margin-bottom: 1em;
@@ -235,5 +246,9 @@ div.burger-menu i{
 }
 	
 
-
+header .form {
+    display: flex;
+    width: 60%; /* Anchura de la barra de búsqueda */
+    margin: 0 auto; /* Centramos la barra de búsqueda */
+}
 
