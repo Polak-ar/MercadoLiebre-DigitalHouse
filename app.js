@@ -4,9 +4,9 @@ const path = require("node:path");
 
 app.use(express.static("./public"));
 
-const PORT =3030;
+let port =3030 || process.env.PORT;
 
-app.listen(PORT, () => console.log(`Servidor corriendo en puerto ${PORT}`));
+app.listen(port, () => console.log(`Servidor corriendo en puerto ${port}`));
 
 app.get('/', (req, res) => {
    res.sendFile(path.resolve("views/home.html"));
